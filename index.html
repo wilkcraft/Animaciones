@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Animaciones en HTML y CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 50px;
+            background-color: #2c2c2c;
+            color: #fff;
+        }
+
+        .animation-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #3c3c3c;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        /* Animación de desplazamiento */
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(200px); }
+            100% { transform: translateX(0); }
+        }
+
+        .move {
+            background-color: #4CAF50;
+            animation: move 3s infinite;
+        }
+
+        /* Animación de rotación */
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .rotate {
+            background-color: #2196F3;
+            animation: rotate 2s infinite linear;
+        }
+
+        /* Animación de escala */
+        @keyframes scale {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+            100% { transform: scale(1); }
+        }
+
+        .scale {
+            background-color: #FF5722;
+            animation: scale 2s infinite;
+        }
+
+        /* Animación de opacidad */
+        @keyframes fade {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .fade {
+            background-color: #9C27B0;
+            animation: fade 3s infinite;
+        }
+
+        /* Animación de color */
+        @keyframes colorChange {
+            0% { background-color: #f44336; }
+            50% { background-color: #3f51b5; }
+            100% { background-color: #f44336; }
+        }
+
+        .colorChange {
+            animation: colorChange 4s infinite;
+        }
+
+        /* Animación de salto */
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+        }
+
+        .jump {
+            background-color: #FFEB3B;
+            animation: jump 1s infinite;
+            color: #2c2c2c;
+        }
+
+        /* Animación de giro y escala */
+        @keyframes rotateScale {
+            0% { transform: rotate(0) scale(1); }
+            50% { transform: rotate(180deg) scale(1.5); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        .rotateScale {
+            background-color: #00BCD4;
+            animation: rotateScale 3s infinite;
+        }
+
+        /* Animación de borde */
+        @keyframes borderChange {
+            0% { border-radius: 0; }
+            50% { border-radius: 50%; }
+            100% { border-radius: 0; }
+        }
+
+        .borderChange {
+            background-color: #8BC34A;
+            animation: borderChange 3s infinite;
+        }
+
+        /* Animación de sombra */
+        @keyframes shadow {
+            0% { box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+            50% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+            100% { box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+        }
+
+        .shadow {
+            background-color: #E91E63;
+            animation: shadow 2s infinite;
+        }
+
+        /* Animación de traslación diagonal */
+        @keyframes diagonal {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(100px, 100px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        .diagonal {
+            background-color: #795548;
+            animation: diagonal 4s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplos de Animaciones en HTML y CSS</h1>
+
+    <div class="animation-container">
+        <h2>Desplazamiento</h2>
+        <div class="box move">Mover</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Rotación</h2>
+        <div class="box rotate">Rotar</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Escala</h2>
+        <div class="box scale">Escalar</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Opacidad</h2>
+        <div class="box fade">Desvanecer</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Cambio de Color</h2>
+        <div class="box colorChange">Color</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Salto</h2>
+        <div class="box jump">Saltar</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Giro y Escala</h2>
+        <div class="box rotateScale">Girar y Escalar</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Cambio de Borde</h2>
+        <div class="box borderChange">Borde</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Sombra</h2>
+        <div class="box shadow">Sombra</div>
+    </div>
+
+    <div class="animation-container">
+        <h2>Traslación Diagonal</h2>
+        <div class="box diagonal">Diagonal</div>
+    </div>
+</body>
+</html>

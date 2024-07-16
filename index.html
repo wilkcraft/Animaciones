@@ -219,6 +219,128 @@
             background-color: #F44336;
             animation: blink 1s infinite;
         }
+
+        /* Nuevas animaciones */
+
+        /* Animación de desplazamiento vertical */
+        @keyframes verticalMove {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(200px); }
+            100% { transform: translateY(0); }
+        }
+
+        .verticalMove {
+            background-color: #FF5733;
+            animation: verticalMove 3s infinite;
+        }
+
+        /* Animación de escala horizontal */
+        @keyframes scaleX {
+            0% { transform: scaleX(1); }
+            50% { transform: scaleX(2); }
+            100% { transform: scaleX(1); }
+        }
+
+        .scaleX {
+            background-color: #33FF57;
+            animation: scaleX 2s infinite;
+        }
+
+        /* Animación de rotación inversa */
+        @keyframes rotateReverse {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(-360deg); }
+        }
+
+        .rotateReverse {
+            background-color: #3357FF;
+            animation: rotateReverse 2s infinite linear;
+        }
+
+        /* Animación de opacidad y escala */
+        @keyframes fadeScale {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .fadeScale {
+            background-color: #FF33A8;
+            animation: fadeScale 3s infinite;
+        }
+
+        /* Animación de desplazamiento en círculo */
+        @keyframes circleMove {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(50px, 50px); }
+            50% { transform: translate(100px, 0); }
+            75% { transform: translate(50px, -50px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        .circleMove {
+            background-color: #33FFF3;
+            animation: circleMove 4s infinite;
+        }
+
+        /* Animación de color y escala */
+        @keyframes colorScale {
+            0% { background-color: #FF3333; transform: scale(1); }
+            50% { background-color: #33FF33; transform: scale(1.5); }
+            100% { background-color: #FF3333; transform: scale(1); }
+        }
+
+        .colorScale {
+            animation: colorScale 3s infinite;
+        }
+
+        /* Animación de giro y opacidad */
+        @keyframes rotateFade {
+            0% { transform: rotate(0deg); opacity: 1; }
+            50% { transform: rotate(180deg); opacity: 0.5; }
+            100% { transform: rotate(360deg); opacity: 1; }
+        }
+
+        .rotateFade {
+            background-color: #8A33FF;
+            animation: rotateFade 4s infinite;
+        }
+
+        /* Animación de desplazamiento y color */
+        @keyframes moveColor {
+            0% { transform: translateX(0); background-color: #FF8A33; }
+            50% { transform: translateX(100px); background-color: #33FF8A; }
+            100% { transform: translateX(0); background-color: #FF8A33; }
+        }
+
+        .moveColor {
+            animation: moveColor 3s infinite;
+        }
+
+        /* Animación de escala y borde */
+        @keyframes scaleBorder {
+            0% { transform: scale(1); border-radius: 0; }
+            50% { transform: scale(1.5); border-radius: 50%; }
+            100% { transform: scale(1); border-radius: 0; }
+        }
+
+        .scaleBorder {
+            background-color: #33A8FF;
+            animation: scaleBorder 3s infinite;
+        }
+
+        /* Animación de giro y sombra */
+        @keyframes rotateShadow {
+            0% { transform: rotate(0deg); box-shadow: none; }
+            50% { transform: rotate(180deg); box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+            100% { transform: rotate(360deg); box-shadow: none; }
+        }
+
+        .rotateShadow {
+            background-color: #A833FF;
+            animation: rotateShadow 3s infinite;
+        }
+
     </style>
 </head>
 <body>
@@ -297,6 +419,56 @@
         <div class="animation-container">
             <h2>Parpadeo</h2>
             <div class="box blink">Parpadeo</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Desplazamiento Vertical</h2>
+            <div class="box verticalMove">Vertical</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Escala Horizontal</h2>
+            <div class="box scaleX">Escalar X</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Rotación Inversa</h2>
+            <div class="box rotateReverse">Rotar Inv</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Opacidad y Escala</h2>
+            <div class="box fadeScale">Fade Scale</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Desplazamiento en Círculo</h2>
+            <div class="box circleMove">Círculo</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Color y Escala</h2>
+            <div class="box colorScale">Color Scale</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Giro y Opacidad</h2>
+            <div class="box rotateFade">Rotar Fade</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Desplazamiento y Color</h2>
+            <div class="box moveColor">Move Color</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Escala y Borde</h2>
+            <div class="box scaleBorder">Escalar Borde</div>
+        </div>
+
+        <div class="animation-container">
+            <h2>Giro y Sombra</h2>
+            <div class="box rotateShadow">Rotar Sombra</div>
         </div>
     </div>
 </body>
